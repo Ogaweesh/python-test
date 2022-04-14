@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(198, 255, 220);
+  margin: 0;
+  text-align: center;
+}
+
+.header {
+  background-color: white;
+  margin: 0 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header h1 {
+  display: inline;
+}
+
+.header img {
+  padding-left: 50px;
+  padding-right: 5px;
+  width: 100px;
+}
+.content h1 {
+  font-style: italic;
+  font-size: 50px;
+}

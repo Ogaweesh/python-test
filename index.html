@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vgltu python test</title>
+    <link rel="stylesheet" href="style/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="https://cdovgltu.ru/pluginfile.php/1/core_admin/logocompact/300x300/1640760899/logo-VGLTU.png"
+        alt="Система управления обучением ФГБОУ ВО «ВГЛТУ»"
+      />
+      <h1>Система управления обучением ФГБОУ ВО «ВГЛТУ»</h1>
+      <div class="lang-bar">
+        <h3>EN</h3>
+        <h3>RU</h3>
+      </div>
+    </header>
+    <br />
+    <div class="content">
+      <h1>Python Quizze</h1>
+      <h2>
+        Check your Python learning progress and take your skills to the next
+        level.
+      </h2>
+    </div>
+    <div class="container main-content">
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8 article">
+          <div class="article-body page-body quizviewer">
+                         <h1 class="text-center mb-4">Basic Data Types in Python</h1>
+              <div class="progress my-3">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 0%; margin-left: 1%"
+                  aria-valuenow="0"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-label="Your Progress"
+                >
+                  
+                </div>
+              </div>
+              <div class="my-4">
+                <p>
+                  In Python 3, the maximum value for an integer is 2<sup
+                    >63</sup
+                  >
+                  - 1:
+                </p>
+              </div>
+
+              <form method="post" id="quizCardForm">
+                <input
+                  type="hidden"
+                  name="csrfmiddlewaretoken"
+                  value="S0xRwY3mw4iXbJaODJPxlSSG7tA8erfa1QkuN78B1p2wN0nrv2rT2cm5SYqvXGWs"
+                />
+                <div class="form-group">
+                  <div
+                    class="form-check custom-control custom-radio mt-2 rounded border quizitem"
+                  >
+                    <input
+                      class="custom-control-input ml-3 quizcontrol"
+                      type="radio"
+                      name="answer"
+                      id="idx-ch0"
+                      value="ch0"
+                      required=""
+                      autofocus=""
+                    />
+                    <label
+                      class="custom-control-label d-block mx-3 mt-3 quizcontrol"
+                      for="idx-ch0"
+                      ><p>False</p></label
+                    >
+                  </div>
+                  <div
+                    class="form-check custom-control custom-radio mt-2 rounded border quizitem"
+                  >
+                    <input
+                      class="custom-control-input ml-3 quizcontrol"
+                      type="radio"
+                      name="answer"
+                      id="idx-ch1"
+                      value="ch1"
+                      required=""
+                    />
+                    <label
+                      class="custom-control-label d-block mx-3 mt-3 quizcontrol"
+                      for="idx-ch1"
+                      ><p>True</p></label
+                    >
+                  </div>
+                </div>
+              </form>
+
+              <div id="quizControls" class="w-100 my-3">
+                <button
+                  ic-post-to="/quizzes/python-data-types/submit/"
+                  ic-on-beforetrigger="beforeTrigger"
+                  ic-include="#quizCardForm"
+                  ic-target="#quizCard"
+                  class="btn btn-primary btn-lg d-block w-100"
+                  id="submitAnswerBtn"
+                  ic-src="/quizzes/python-data-types/submit/"
+                  ic-verb="POST"
+                  ic-trigger-on="default"
+                  ic-deps="ignore"
+                >
+                  <i
+                    class="ic-indicator fa fa-spinner fa-spin"
+                    style="display: none"
+                  ></i>
+                  Check Your Answer »
+                </button>
+                <div
+                  class="networkErrorArea d-none alert alert-danger my-3 animate__animated animate__fadeIn"
+                >
+                  <p>
+                    <strong>Sorry!</strong> There has been an error processing
+                    your answer. Please try again.
+                  </p>
+                </div>
+                <p class="small muted text-center mt-2">
+                  <a
+                    href="https://feedback.realpython.com/realpython-com/?d=eyJwIjoicmVhbHB5dGhvbi1jb20iLCJzaWciOiJrbiM4N1hHM3skKyF2YFdYNUsyKHBgbWhgRnFpPSVxRkc_QjRRJllYIiwidCI6IkJhc2ljIERhdGEgVHlwZXMgaW4gUHl0aG9uIChRdWl6KSIsInUiOiJodHRwczovL3JlYWxweXRob24uY29tL3F1aXp6ZXMvcHl0aG9uLWRhdGEtdHlwZXMvc3RhcnQvP2NhcmRfaWR4PTAifQ=="
+                    target="_blank"
+                    ><i class="fa fa-commenting-o" aria-hidden="true"></i> Got
+                    feedback on this question?</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
